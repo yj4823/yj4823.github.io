@@ -1,0 +1,100 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin:0;
+    padding:0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'S-CoreDream-3Light','Swis721 BlkCn BT', sans-serif;
+    line-height:1;
+    color:#262626;
+    margin: 0;
+    padding: 0;
+}
+input, textarea, button {
+    font-family: 'S-CoreDream-3Light','Swis721 BlkCn BT', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:inherit;
+    font-weight:normal;
+    margin:0;
+    padding:0;
+}
+ul, ol, li {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+img, fieldset, input {
+    border:none;
+    vertical-align:middle;
+}
+a {
+    text-decoration:none;
+    color:#393939;
+    margin:0;
+    padding:0;
+}
+input::placeholder, textarea::placeholder {
+    color:#939393;
+    font-weight:300;
+}
+.clear:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.hide { /* 텍스트를 나타나지 않게함 */
+  height:0;
+  font-size:1px;
+  overflow:hidden;
+}
+.fixed {
+  width: 100%;
+  margin:0 auto;
+}
+legend{
+  display: none;
+}
+label, input, button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#fullpage{
+  position:relative;
+  top:0px;
+  z-index:9;
+  width:100%;
+  height:100%;
+}
+.fullsection{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.quick{
+  position:fixed;
+  right:20px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:100000
+}
+.quick li{
+  width:10px;
+  height:10px;
+  margin-bottom:10px;
+  border-radius:15px;
+  border:2px solid #fff;
+  cursor:pointer;
+}
+.quick .on{
+  background:#fff;
+}
