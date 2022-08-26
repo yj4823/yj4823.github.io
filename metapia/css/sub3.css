@@ -1,0 +1,719 @@
+/* header */
+header{
+  width: 100%;
+  height: 90px;
+}
+.header{
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.header a img{
+  width: 130px;
+  height: 37px;
+}
+
+/* menu */
+.header .menu{
+  width: 80px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #583FBC;
+  border-radius: 10px;
+}
+.header .menu.on{
+  background: #583fbc;
+  color: #fff;
+}
+.header .menu_list{
+  z-index: 10;
+  width: 50%;
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  left: -100%;
+  background: #fff;
+  padding: 30px 50px 0;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.header .menu_list.open{
+  left: 0%;
+}
+.header .menu_list > ul > li ~ li{
+  margin-top: 30px;
+}
+.header .menu_list > ul > li:nth-child(2) ~ li > a{
+  color: #583fbc;
+}
+.header .menu_list ul li:hover a{
+  color: #583fbc;
+}
+.header .menu_list > ul > li a{
+  position: relative;
+}
+.header .menu_list > ul > li a:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #583fbc;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+.header .menu_list > ul > li:hover a:after{
+  width: 100%;
+}
+.header .sns{
+  position: relative;
+  text-indent: 34px;
+  height: 150px;
+  line-height: 30px;
+  margin: 40px 0 0;
+}
+.header .sns ul li a{
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.header .sns ul li:hover a{
+  opacity: 0.4;
+}
+.header .sns ul li:nth-child(1) a{
+  background: url(../img/icon/youtube.png) no-repeat;
+  background-size: contain;
+}
+.header .sns ul li:nth-child(2) a{
+  background: url(../img/icon/blog.png) no-repeat;
+  background-size: contain;
+}
+.header .sns ul li:nth-child(3) a{
+  background: url(../img/icon/insta.png) no-repeat;
+  background-size: contain;
+}
+.header .nft{
+  display: block;
+  color: #583fbc;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.header .nft:hover{
+  color: #fff;
+}
+.header .nft:before{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 358px;
+  left: -100%;
+  z-index: -1;
+  background: #583fbc;
+  transition: 0.5s;
+}
+.header .nft:hover:before{
+  left: 0;
+}
+
+/* main 영역 */
+main{
+  width: 100%;
+}
+.video_wrap{
+  width: 100%;
+  height: 195px;
+  position: relative;
+  overflow: hidden;
+}
+.video_wrap .video video{
+  transform: translateY(-10%);
+  width: 100%;
+  filter: brightness(0.4);
+}
+.video_wrap .video_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.video_text span{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.video_text p{
+  font-size: 24px;
+}
+
+/* 문의영역 */
+.section{
+  width: 100%;
+  margin: 50px auto;
+}
+
+/* sec1 영역 */
+.sec1{
+  background: #f5f5f7;
+  padding: 10px 0;
+}
+.info_box{
+  width: 80%;
+  margin: 0 auto;
+}
+.info > input{
+  width: 100%;
+  margin: 10px auto;
+  background: #fff;
+  padding: 16px 0;
+  text-indent: 38px;
+  background-repeat: no-repeat;
+  background-size: 16px 20px;
+  background-position: 12px 12px;
+}
+.info > input:nth-child(1){
+  background-image: url(../img/icon/name.png);
+}
+.info > input:nth-child(2){
+  background-image: url(../img/icon/name.png);
+}
+.info > input:nth-child(3){
+  background-image: url(../img/icon/email.png);
+  background-size: 20px 16px;
+  background-position: 10px 16px;
+}
+.info > input:nth-child(4){
+  background-image: url(../img/icon/phone.png);
+  background-size: 16px 22px;
+  background-position: 12px 13px;
+}
+h4{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.text > textarea{
+  width: 100%;
+  height: 156px;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.survice{
+  width: 80%;
+  margin: 0 auto;
+}
+.survice span{
+  display: inline-block;
+  width: 44%;
+  padding: 16px 0 ;
+  margin: 8px 6px;
+  font-size: 14px;
+  border: 1px solid #9384CE;
+  color: #9384ce;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.survice span.on{
+  background: #9384ce;
+  color: #fff;
+}
+button{
+  width: 90px;
+  height: 46px;
+  font-size: 16px;
+  background: #583fbc;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+  transition: 0.5s;
+  }
+  button:hover{
+    background: #fff;
+    border: 1px solid #9384ce;
+    color: #9384ce;
+  }
+
+/* sec2 영역 */
+.sec2{
+  width: 90%;
+  margin: 30px auto;
+}
+.sec2 div{
+  margin: 60px 0;
+}
+.sec2 h4{
+  border-bottom: 2px solid #583FBC;
+  padding-bottom: 10px;
+}
+.sec2 img{
+  width: 50px;
+  height: 50px;
+  margin-right: 6px;
+}
+.sec2 span{
+  margin-top: 30px;
+  line-height: 3;
+  font-size: 14px;
+}
+.section p{
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* footer 영역 */
+footer{
+  display: none;
+}
+
+
+/* 768px */
+@media all and (min-width:768px) {
+  /* menu */
+  .header .menu_list{
+    padding: 60px 60px 0;
+    font-size: 18px;
+  }
+  .header .menu_list > ul > li ~ li{
+    margin-top: 50px;
+  }
+  .header .sns{
+    margin: 50px 0;
+  }
+  .header .sns ul li a{
+    margin-top: 20px;
+  }
+  .header .nft{
+    font-size: 20px;
+  }
+  .header .nft:before{
+    top: 516px;
+  }
+
+  /* main 영역 */
+  main{
+    width: 100%;
+  }
+  .video_wrap{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+  }
+  .video_wrap .video video{
+    transform: translateY(0%);
+    width: 100%;
+    filter: brightness(0.4);
+  }
+  .video_wrap .video_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+  .video_text span{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .video_text p{
+    font-size: 26px;
+  }
+  
+  /* 문의영역 */
+  .section{
+    width: 70%;
+  }
+  
+  /* sec1 영역 */
+  .info > input{
+    padding: 20px 0;
+    text-indent: 44px;
+    background-size: 20px 24px;
+    background-position: 12px 14px;
+  }
+  .info > input::placeholder{
+    font-size: 18px;
+  }
+  .info > input:nth-child(3){
+    background-size: 22px 18px;
+    background-position: 10px 18px;
+  }
+  .info > input:nth-child(4){
+    background-size: 18px 24px;
+    background-position: 12px 15px;
+  }
+  h4{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  .text > textarea::placeholder{
+    font-size: 18px;
+  }
+  .survice span{
+    width: 46%;
+    margin: 9px 7px;
+    font-size: 16px;
+  }
+  button{
+    display: block;
+    width: 140px;
+    height: 50px;
+    font-size: 18px !important;
+    margin: 30px auto;
+  }
+  
+  /* sec2 영역 */
+  .sec2 div{
+    margin: 100px 0;
+  }
+  .sec2 h4{
+    padding-bottom: 20px;
+  }
+  .sec2 img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .sec2 span{
+    font-size: 20px;
+  }
+  .section p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* footer 영역 */
+  footer{
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #ccc;
+  }
+  .footer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .footer .footer_logo img{
+    width: 218px;
+    margin-bottom: 20px;
+  }
+  .footer .footer_text strong{
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .footer .footer_text p{
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+/* 1024 */
+@media all and (min-width:1024px){
+  /* header 영역 */
+  header{
+    height: 130px;
+  }
+  .header{
+    padding-top: 60px;
+  }
+  .header a img{
+    width: 200px;
+    height: 50px;
+  }
+
+  /* menu 영역 */
+  .header .menu{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .header .menu_list{
+    top: 130px;
+    padding: 80px 60px 0;
+    font-size: 20px;
+  }
+  .header .nft{
+    font-size: 22px;
+  }
+  .header .nft:before{
+    top: 530px;
+    height: 80px;
+  }
+
+  /* main 영역 */
+  .video_wrap .video video{
+    transform: translateY(-20%);
+  }
+  .video_text span{
+    font-size: 20px;
+  }
+  .video_text p{
+    font-size: 28px;
+  }
+
+  /* 문의영역 */
+  .section{
+    width: 70%;
+    margin: 80px auto;
+  }
+  
+  /* sec1 영역 */
+  .sec1{
+    padding: 30px 0;
+  }
+  .info_box{
+    width: 80%;
+  }
+  .info > input{
+    padding: 24px 0;
+    text-indent: 60px;
+    background-size: 22px 26px;
+    background-position: 20px 17px;
+  }
+  .info > input::placeholder{
+    font-size: 18px;
+  }
+  .info > input:nth-child(3){
+    background-size: 24px 20px;
+    background-position: 20px 21px;
+  }
+  .info > input:nth-child(4){
+    background-size: 18px 24px;
+    background-position: 24px 19px;
+  }
+  h4{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  .survice{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .survice span{
+    width: 46%;
+    margin: 9px 7px;
+  }
+  button{
+    width: 140px;
+    height: 50px;
+    margin: 30px auto;
+  }
+  
+  /* sec2 영역 */
+  .sec2 div{
+    margin: 100px 0;
+  }
+  .sec2 h4{
+    padding-bottom: 20px;
+  }
+  .sec2 img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .sec2 span{
+    font-size: 20px;
+  }
+  .section p{
+    font-size: 16px;
+  }
+
+  /* footer 영역 */
+  .footer{
+    padding: 60px;
+  }
+  .footer .footer_text strong{
+    font-size: 16px;
+  }
+  .footer .footer_text p{
+    font-size: 14px;
+  }
+}
+
+/* 1500 */
+@media all and (min-width:1500px){
+  /* header 영역 */
+  header{
+    height: 100px;
+  }
+  .header{
+    padding-top: 30px;
+  }
+  .header a img{
+    width: 200px;
+    height: 50px;
+  }
+
+  /* menu 영역 */
+  .header .menu{
+    display: none;
+  }
+  .header .menu_list{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -10px;
+    background: none;
+    padding: 0;
+  }
+  .header .menu_list > ul{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .header .menu_list > ul > li{
+    flex: 1;
+    text-align: center;
+  }
+  .header .menu_list > ul > li ~ li{
+    margin: 0;
+  }
+  .header .sns{
+    position: relative;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+  }
+  .header .sns ul{
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  .header .sns ul li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-left: 20px;
+  }
+  .header .nft{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    background: #583fbc;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    margin-left: 50px;
+    font-size: 22px;
+  }
+  .header .nft:hover{
+    color: #583fbc;
+    background: #fff;
+    border: 1px solid #583fbc;
+  }
+  .header .nft:before{
+    display: none;
+  }
+
+  /* main 영역 */
+  .video_wrap{
+    height: 400px;
+  }
+  .video_wrap .video video{
+    transform: translateY(-30%);
+  }
+  .video_text span{
+    font-size: 24px;
+  }
+  .video_text p{
+    font-size: 36px;
+  }
+
+  /* 문의영역 */
+  .section{
+    width: 60%;
+    margin: 50px auto;
+  }
+  
+  /* sec1 영역 */
+  .info_box{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .info_box .info{
+    width: 48%;
+  }
+  .info_box .text{
+    width: 48%;
+  }
+  .info > input{
+    padding: 20px 0;
+    text-indent: 44px;
+    background-size: 20px 24px;
+    background-position: 12px 14px;
+  }
+  .info > input:nth-child(3){
+    background-size: 22px 18px;
+    background-position: 10px 18px;
+  }
+  .info > input:nth-child(4){
+    background-position: 12px 15px;
+  }
+  .text > textarea{
+    height: 226px;
+  }
+  .survice{
+    width: 90%;
+  }
+  .survice span{
+    width: 31%;
+    margin: 10px 8px;
+    font-size: 18px;
+  }
+  
+  /* sec2 영역 */
+  .sec2{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec2 div{
+    width: 44%;
+  }
+
+  /* footer 영역 */
+  .footer{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer_logo img{
+    width: 300px;
+    height: auto;
+  }
+  .footer .footer_text strong{
+    font-size: 16px;
+  }
+  .footer .footer_text p{
+    font-size: 14px;
+  }
+}
