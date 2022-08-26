@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T world</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/sub_style.css">
+  <link rel="shortcut icon" href="./img/main/favicon.png">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/sub.js"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="./img/icon/menu.png" alt="메뉴" class="menu_btn">
+    <a href="index.html"class="logo">
+      <h1>로고</h1>
+    </a>
+    <nav class="nav">
+      <div class="menu_login">
+        <div class="close"></div>
+      </div>
+      <div class="option">
+        <a href="#" class="allopen">전체열기</a>
+        <a href="#" class="allclose">전체닫기</a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#">상품서비스</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu1">
+            <li><a href="#">요금제</a></li>
+            <li><a href="#">부가서비스</a></li>
+            <li><a href="#">인터넷/전화/IPTV/보안</a></li>
+            <li><a href="#">로밍</a></li>
+            <li><a href="#">결합상품</a></li>
+            <li><a href="#">스마트홈</a></li>
+            <li><a href="#">모바일 전용 서비스</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">T다이렉트샵</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu2">
+            <li><a href="#">휴대폰</a></li>
+            <li><a href="#">T우주@티다</a></li>
+            <li><a href="#">테블릿/노트북</a></li>
+            <li><a href="#">스마트워치</a></li>
+            <li><a href="#">자급제/쓰던 폰</a></li>
+            <li><a href="#">인터넷/IPTV</a></li>
+            <li><a href="#">티다가 좋은 10가지 이유</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">T우주</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu3">
+            <li><a href="#">구독 상품</a></li>
+            <li><a href="#">나의 구독</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">T멤버십</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu4">
+            <li><a href="#">혜택 브랜드</a></li>
+            <li><a href="#">혜택 프로그램</a></li>
+            <li><a href="#">나의 T멤버십</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">T로밍</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu5">
+            <li><a href="#">로밍 안내</a></li>
+            <li><a href="#">로밍 맞춤 조회</a></li>
+            <li><a href="#">로밍 상품</a></li>
+            <li><a href="#">로밍 카드/쿠폰</a></li>
+            <li><a href="#">baro Box/폰 임대</a></li>
+            <li><a href="#">로밍 센터</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./sub.html">혜택/이벤트</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu6">
+            <li><a href="#">헤택/할인</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">고객지원</a>
+          <img src="./img/icon/more_down.png" alt="">
+          <ul class="sub_menu" id="sub_menu7">
+            <li><a href="#">매장 및 AS센터 찾기</a></li>
+            <li><a href="#">온라인 상담/문의</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+            <li><a href="#">서비스 안내</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">고객의견</a></li>
+            <li><a href="#">이용자 피해예방 센터</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu_bg"></div>
+    </nav>
+    <div class="search">
+      <img src="./img/icon/search.png" alt="검색" class="search_img">
+      <div class="search_box">
+        <input type="text" placeholder="검색어 입력">
+        <ul class="search_text">
+          <li>갤럭시</li>
+          <li>아이폰</li>
+          <li>가족결합혜택</li>
+        </ul>
+      </div>
+  </div>
+  <img src="./img/icon/my.png" alt="내정보" class="my">
+  </header>
+  <div class="sub_menu_bar">
+    <ul>
+      <li><a href="#">혜택/할인</a></li>
+      <li><a href="#">이벤트</a></li>
+    </ul>
+  </div>
+  <div class="slider">
+    <span class="prev_btn">이전버튼</span>
+    <span class="next_btn">다음버튼</span>
+  </div>
+  <main>
+    <div class="best_event">
+      <h2 class="title">가장 많이 사랑받은 혜택</h2>
+      <div class="best_event_img">
+        <ul>
+          <li>
+            <a href="#"><img src="./img/main/event1.png" alt="이벤트1"></a>
+          </li>
+          <div class="event_list">
+          <li>
+            <div class="ani"></div>
+            <a href="./sub2.html"><img src="./img/main/event2.png" alt="이벤트2"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/main/event3.png" alt="이벤트3"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/main/event4.png" alt="이벤트4"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/main/event5.png" alt="이벤트5"></a>
+          </li>
+        </div>
+        </ul>
+      </div>
+    </div>
+    <h2 class="title" id="title2">요금 할인을 받고 싶다면?</h2>
+    <div class="sale">
+      <div class="sale_left">
+        <div>
+          <img src="./img/icon/ico_discount05.png" alt="">
+          <p>포인트로 결제할 때</p>
+          <span>레인보우 포인트</span>
+        </div>
+        <div>
+          <img src="./img/icon/ico_discount03.png" alt="">
+          <p>상품 결합할 때</p>
+          <span>유무선 결합할인</span>
+        </div>
+      </div>
+      <img src="./img/main/iphone.png" alt="" class="sale_img">
+      <div class="sale_right">
+        <div>
+          <img src="./img/icon/ico_discount06.png" alt="">
+          <p>휴대폰을 구매할 때</p>
+          <span>제휴카드, T모아쿠폰, 안심보상</span>
+        </div>
+        <div>
+          <img src="./img/icon/ico_discount02.png" alt="">
+          <p>요금상품 선택할 때</p>
+          <span>휴대폰 요금 약정</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_01">
+      <p>이용약관 &nbsp; | &nbsp; <strong>개인정보 처리방침</strong> &nbsp; | &nbsp; 개인정보 이용내역 &nbsp; | &nbsp; 미환급금 조회 &nbsp; | &nbsp; 인증 센터 &nbsp; | &nbsp; 프라이버스 센터 &nbsp; | &nbsp; 커버리지 &nbsp; | &nbsp; 동의정보 지킴이 &nbsp; | &nbsp; 이용자 피해예방 가이드 &nbsp; | &nbsp; 선택약정 할인 &nbsp; | &nbsp; 책임의 한계화 법적고지 &nbsp; | &nbsp; 개인정보 파파라치 신고센터</p>
+    </div>
+    <div class="footer_02">
+      <div class="text_box">
+      <p>서울특별시 중구 을지로 65대표이사/사장 : 유영상사업자등록번호 : 104-81-37225판매허가번호 : 중구 02923호 <span>사업자정보확인</span><br> 
+        고객센터 : 휴대폰 국번없이 114(무료) 또는 080-011-6000(무료), 국번없이 1599-0011(유료)인터넷/집전화 고객센터 : 080-816-2000(무료) 또는 1600-2000(유료)T멤버십 마켓 : 1599-3377(유료) <br>
+        COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+    </div>
+      <div class="text_box2">
+        <ul>
+          <li>
+            <img src="./img/main/img_footer1.png" alt="푸터1"><span>국가고객만족도<br>25년 연속 1위</span>
+          </li>
+          <li>
+            <img src="./img/main/img_footer2.png" alt="푸터2"><span>한국서비스품질지수<br>22년 연속 1위</span>
+          </li>
+          <li>
+            <img src="./img/main/img_footer3.png" alt="푸터3"><span>한국산업고객만족도<br>24년 연속 1위</span>
+          </li>
+          <li>
+            <img src="./img/main/img_footer4.png" alt="푸터4"><span>과학기술정보통신부<br>웹접근성준수</span>
+          </li>
+          <li>
+            <img src="./img/main/img_footer5.png" alt="푸터5"><span>13th 웹어워드 코리아<br>UX/UI 이노베이션 대상</span>
+          </li>
+          <li>
+            <img src="./img/main/img_footer6.png" alt="푸터6"><span>동반성장지수<br>9년 연속 최우수 기업</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_03">
+      <img src="./img/icon/twitter.png" alt="트위터">
+      <img src="./img/icon/facebook.png" alt="페이스북">
+      <img src="./img/icon/youtube.png" alt="유튜브">
+      <img src="./img/icon/instagram.png" alt="인스타">
+      <img src="./img/icon/kakao.png" alt="카카오">
+      <img src="./img/icon/t.png" alt="T">
+    </div>
+    <div class="footer_04">
+      <div class="a_before">
+        <a href="#">English</a>
+      </div>
+      <select name="Family Site">
+        <option value="" disabled selected>Family Site</option>
+        <option value="T-world Biz">T-world Biz</option>
+        <option value="SK telecom">SK telecom</option>
+        <option value="SK 브로드밴드">SK 브로드밴드</option>
+        <option value="SK 스포츠단">SK 스포츠단</option>
+        <option value="T together">T together</option>
+        <option value="T wifi zone">T wifi zone</option>
+        <option value="파트너온">파트너온</option>
+        <option value="NUGU">NUGU</option>
+        <option value="SK쉴더스">SK쉴더스</option>
+        <option value="행복스토어">행복스토어</option>
+      </select>
+    </div>
+  </footer>
+</body>
+</html>
