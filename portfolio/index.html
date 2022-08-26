@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>이연진 포트폴리오</title>
+    <link rel="shortcut icon" href="./favicon/32.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="apple-touch-icon" sizes="32x32" href="./favicon/32.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="./favicon/64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="./favicon/128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="./favicon/256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./favicon/512.png">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/modernizr.custom.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui-1.12.0.custom.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/mixFilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var wd = parseInt($(window).width());
+            if(wd>=770){
+                $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(300).animate({
+                            left: '0%'
+                        }, 2000, 'easeOutExpo');
+
+
+
+                    }
+                    //section 3
+                    if (anchorLink == '3rdPage') {
+                        //moving the image
+                        $('#section2').find('.container').delay(0).animate({
+                            top: '-2%',
+                            opacity:'1'
+                        }, 2000, 'easeOutExpo');
+                    }
+                }
+            });
+            } 
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">INTRO</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">PROFILE</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">PORTFOLIO</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="main">
+                <div class="line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="main_text">
+                    <h2>LEE YEON JIN</h2>
+                    <p>Publisher</p>
+                    <h3>PORTFOLIO</h3>
+                </div>
+            </div>
+            <div class="scroll">
+                <img src="./img/scrolldown.gif" alt="스크롤">
+                <h6>scroll down</h6>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div id="profile">
+                <div class="prof1">
+                    <ul>
+                        <h2>Profile</h2>
+                        <h3>이연진 (LEE YEONJIN)</h3>
+                        <li class="icon"><img src="img/calendar.png" alt="">1997.09.25</li>
+                        <li class="icon"><img src="img/mobile.png" alt="">010.6412.4823</li>
+                        <li class="icon"><img src="img/mail.png" alt="">duswls0034@naver.com</li>
+                        <li class="icon"><img src="img/college.png" alt="">배재대학교 정보통신공학과 졸업</li>
+                    </ul>
+                    <li class="profile_img"><img src="./img/photo_0.JPG" alt=""></li>
+                </div>
+                <div class="prof2">
+                    <div class="list1">
+
+                        <p><span class="title">자 격 증</span><span class="content">웹디자인기능사(준비중), GTQ포토샵 1급, 운전면허증 2종 보통</span></p>
+
+                        <p><span class="title">교육사항</span><span class="content">2022.04~2022.08 [과정평가형] 웹디자인기능사(웹퍼블리셔,프론트앤드)취득과정 [그린컴퓨터아트학원 수료]</span></p>
+                    </div>
+                    <div class="list23">
+                        <div class="list2">
+                            <h4 class="title">Software Skills</h4>
+                            <div class="skill">
+                                <div id="ai">
+                                    <p>Ai & Ps</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>95%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ht">
+                                    <p>HTML/CSS</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ja">
+                                    <p>Javascript</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>70%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="jq">
+                                    <p>JQuery</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>80%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fm">
+                                    <p>Figma</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>95%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="c">
+                                    <p>c++</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>70%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div> <!-- skill  -->
+                        </div> <!-- list2 -->
+                        <div class="list3">
+                            <div class="hobby">
+                                <h4 class="title">Hobby</h4>
+                                <ul>
+                                    <li><img src="./img/airplane.png" alt="">여행</li>
+                                    <li><img src="./img/music.png" alt="">음악감상</li>
+                                    <li><img src="./img/movie.png" alt="">영화관람</li>
+                                    <li> <img src="./img/camera.png" alt="">사진찍기</li>
+                                </ul>
+                            </div>
+                            <div class="pers">
+                                <h4 class="title2">Personality</h4>
+                                <div id="per1">
+                                    <p class="left">외향적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">내향적</p>
+                                </div>
+                                <div id="per2">
+                                    <p class="left">이성적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">감성적</p>
+                                </div>
+                                <div id="per3">
+                                    <p class="left">능동적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">수동적</p>
+                                </div> <!--  per3  -->
+
+                            </div> <!-- list3 -->
+                        </div> <!--  list23 -->
+
+                    </div> <!-- prof2  -->
+
+                </div> <!--  profile  -->
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="art">
+                    <h2>PORTFOLIO</h2>
+                    <div class="filterWrap">
+                        <button class="filter" data-filter="all">All</button>
+                        <button class="filter" data-filter=".web">WEB</button>
+                        <button class="filter" data-filter=".responsive">RESPONSIVE</button>
+                        <button class="filter" data-filter=".mobile">MOBILE</button>
+                    </div>
+                </div>
+                <div class="container" id="mixItUp">
+                    <div class="mix web" id="d1" data-myorder="1">
+                        <img src="./img/pascucci.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">파스쿠찌(카페)</h3>
+                            <p class="discription">파스쿠찌의 주조색을 살리고 메뉴를 더욱 돋보이게 디자인</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/HTML/CSS</p>
+                            <a href="https://yj4823.github.io/passcucci/" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d2" data-myorder="2">
+                        <img src="./img/Tworld.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">T월드(정보/통신사이트)</h3>
+                            <p class="discription">정보제공을 위해 깔끔하게 디자인</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://yj4823.github.io/Tworld/" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d3" data-myorder="3">
+                        <img src="./img/metapia_1.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">메타피아(메타버스 사이트)</h3>
+                            <p class="discription">동적이고 눈이 심심하지 않게끔 디자인</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://yj4823.github.io/metapia/" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d4" data-myorder="4">
+                        <img src="./img/dj.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">대전중구문화관광(공공기관 사이트)</h3>
+                            <p class="discription">풀페이지를 활용해 대전 중구의 매력을 느낄 수 있게 디자인(제작중)</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="https://yj4823.github.io/djjunggu/" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix mobile" id="d5" data-myorder="5">
+                        <img src="./img/camp.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">캠프향기(예약 사이트)</h3>
+                            <p class="discription">정보를 보다 쉽게 알아낼 수 있게 깔끔하게 디자인</p>
+                            <p class="size">Mobile</p>
+                            <p class="program">Photoshop/figma</p>
+                            <a href="https://www.figma.com/file/xFRzyKYVxf6UwE2amPJhVN/%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%8A%A4%EC%BC%80%EC%B9%98-(%EB%94%94%EC%9E%90%EC%9D%B8)?node-id=0%3A1" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div id="footer">
+                <p>COPYRIGHT &copy; 2022 PENGSU ALL RIGHTS RESERVED.</p>
+            </div> -->
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
