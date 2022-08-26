@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pascucci</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          var $nav=$('header nav > ul > li'),
+              $sub=$('header nav > ul > li ul, .menu_bg');
+
+              $sub.hide();
+              $nav.hover(function(){
+                  $('.header').addClass('on');
+                  $sub.stop().slideDown();
+              }, function(){
+                  $sub.stop().slideUp(function(){
+                      $('.header').removeClass('on');
+                  });
+              });
+            });
+  </script>
+</head>
+<body>
+  <header>
+  <div class="header_wrap fixed">
+    <h1 class="logo"><a href="index.html">logo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#"><p>ESPRESSO BAR</p></a>
+          <ul>
+            <li><a href="#">ESPRESSO BAR</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">CAFFE PASCUCCI</a>
+          <ul>
+            <li><a href="#">브랜드소개</a></li>
+            <li><a href="#">커피 & 컬쳐</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">MENU</a>
+          <ul>
+            <li><a href="sub.html" class="go">Coffee</a></li>
+            <li><a href="#">Beverage</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">MD</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">NEWS</a>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">파스쿠찌Talk</a></li>
+            <li><a href="#">홍보센터</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">STORE</a>
+          <ul>
+            <li><a href="#">매장안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">CUSTOMER</a>
+          <ul>
+            <li><a href="#">제휴안내</a></li>
+            <li><a href="#">자주하는질문</a></li>
+            <li><a href="#">1:1문의하기</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="sns_wrap">
+          <a href="#"><h2 class="sns">#PASCUCCI</h2></a>
+          <div class="sns_list">
+            <ul>
+              <li><img src="./image/ic_sns_facebook.png" alt="페이스북"><a href="#">Facebook</a></li>
+              <li><img src="./image/ic_sns_insta.png" alt="인스타"><a href="#">Instagram</a></li>
+              <li><img src="./image/ic_sns_youtube.png" alt="유튜브"><a href="#">Youtube</a></li>
+              <li><img src="./image/ic_sns_blog.png" alt="블로그"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu_bg"></div>
+  </div>
+  </header>
+<div class="slide">
+  <div class="next">
+      <a href="#" id="next_l"><img src="./image/next2.png" alt="" ></a>
+      <a href="#" id="next_r"><img src="./image/next1.png" alt=""></a>
+      <div class="slide_img">
+        <a href="#"></a>
+      </div>
+  </div>
+</div>
+<main>
+  <div class="sec_wrap fixed">
+  <section class="sec1">
+    <div class="main_menu">
+      <a href="#"></a>
+    </div>
+    <div class="sub_menu">
+      <div class="main_text">
+      <h2>BEST MENU</h2>
+      <a href="#">
+        <p>젤라또 포도<br>(Gelato Grape)</p>
+        <span>포도와 구슬 아이스에 <br>
+          이탈리안 요거트 젤라또가 만난 달콤 포도 빙수</span>
+      </a>
+    </div>
+    <div class="sub_img">
+      <ul>
+        <li><a href="#"><img src="./image/젤라또_2.png" alt=""  class="sub_menu1"></a></li>
+        <li class="sub_menu2"><img src="./image/젤라또_3.png" alt=""><a href="#"></a></li>
+      </ul>
+    </div>
+      <a href="#"><p class="more">더 많은 메뉴 보러가기</p></a>
+    </div>
+  </section>
+  <section class="sec2">
+    <div class="sec_left">
+      <h2>PASCUCCI<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHANNEL</h2>
+      <iframe  src="https://www.youtube.com/embed/LG_1JxTmIJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="#"><p>더 많은 영상</p></a>
+    </div>
+    <div class="sec_right">
+      <iframe src="https://www.youtube.com/embed/vaKPc8ps2X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </section>
+</div>
+  <section class="sec3 clear">
+    <h2>PASCUCCI&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STORY</h2>
+    <div class="box1">
+      <h3>전통과 전통의 만남</h3>
+      <p>
+        1883년 이탈리아 몬테펠트로에서 탄생한 카페 파스쿠찌.<br>
+        현재 이탈리아, 영국, 스페인, 미국 등 세계 20여 개 국의<br>
+        40개 도시에 진출한 글로벌 브랜드로 성장하였습니다..<br>
+      </p>
+      <a href="#" class="btn1">한국 파스쿠찌 이야기</a>
+      <a href="#" class="btn2">이탈리아 파스쿠찌 이야기</a>
+    </div>
+    <div class="box2">
+      <h3>가맹 사업 안내</h3>
+      <ul>
+        <li class="img1">
+          <a href="#"></a>
+          <p>창업의뢰</p>
+        </li>
+        <li class="img2">
+          <a href="#"></a>
+          <p>창업승인</p>
+        </li>
+        <li class="img3">
+          <a href="#"></a>
+          <p>가맹계약</p>
+        </li>
+        <li class="img4">
+          <a href="#"></a>
+          <p>매장오픈</p>
+        </li>
+      </ul>
+    </div>
+    <div class="box3">
+      <h3>전국 파스쿠찌 매장찾기</h3>
+      <select name="시/도">
+        <option value="">시/도</option>
+        <option value="서울">서울</option>
+        <option value="부산">부산</option>
+        <option value="광주">광주</option>
+      </select>
+      <select name="시/군/구">
+        <option value="">시/군/구</option>
+        <option value="종로구">종로구</option>
+        <option value="중구">중구</option>
+        <option value="용산구">용산구</option>
+      </select>
+      <input type="text" placeholder="&nbsp;매장이름">
+      <button class="btn3">매장찾으러가기</button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_wrap">
+      <div class="footer_left">
+        <div class="guide">
+          <ul>
+            <li><a href="#">해피포인트</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">영상정보처리기기운영 관리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">윤리신고센터</a></li>
+            <li><a href="#">거래희망사전등록</a></li>
+          </ul>
+        </div>
+        <div class="footer_text clear">
+          <p>(주) 파리크라상사업자등록 번호: 129-81-07244 <br>
+            경기도 성남시 중원구 사기막골로31번길 18FAX. 0505-073-0210고객상담센터 080-731-2027 <br>
+            ALL RIGHTS RESERVED &copy; 2022 THE PASCUCCI, PARIS CROISSANT CO., LTD.</p>
+        </div>
+      </div>
+      <div class="footer_right">
+        <div class="select">
+          <select name="바로가기" onchange="window.open(value, '_blank');">
+              <option value="패밀리사이트 바로가기">패밀리사이트 바로가기</option>
+              <option value="파스쿠찌 이탈리아">파스쿠찌 이탈리아</option>
+              <option value="파리바게트">파리바게트</option>
+              <option value="던킨도너츠">던킨도너츠</option>
+              <option value="베스킨라빈스">베스킨라빈스</option>
+          </select>
+        </div>
+        <div class="sns1">
+          <a href="#" id="youtube"><img src="./image/youtube.png" alt="유튜브"></a>
+          <a href="#" id="insta"><img src="./image/insta.png" alt="인스타"></a>
+          <a href="#" id="facebook"><img src="./image/facebook.png" alt="페이스북"></a>
+          <a href="#" id="blog"><img src="./image/blog.png" alt="블로그"></a>
+        </div>
+        <div class="sns2">
+          <a href="#"><img src="./image/mark1.png" alt="저작권1"></a>
+          <a href="#"><img src="./image/mark2.png" alt="저작권2"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

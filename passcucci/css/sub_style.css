@@ -1,0 +1,281 @@
+body{
+  overflow-x: hidden;
+}
+
+/* header */
+header{
+  height: 130px;
+  background-color: #000;
+}
+header .logo{
+  width: 211px;
+  height: 50px;
+  padding: 35px 80px 0 35px;
+  float: left;
+  margin-left: 20px;
+}
+header .logo a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/logo.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  text-indent: -9999px;
+}
+header nav{
+  float: left;
+}
+header nav > ul > li{
+  float: left;
+  height: 85px;
+  position: relative;
+}
+header nav > ul > li ~ li{
+  margin-left: 120px;
+}
+header nav > ul > li > a{
+  display: block;
+  height: 85px;
+  line-height: 130px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;;
+}
+header nav > ul > li:hover{
+  border-bottom: 2px solid #b40000;
+  box-sizing: border-box;
+}
+header nav ul li .on{
+  color: #b40000;
+  border-bottom: 2px solid #b40000;
+}
+header nav > ul > li ul{
+  position: absolute;
+  left: -5px;
+  top: 130px;
+  width: 200px;
+  height: 550px;
+  float: left;
+  z-index: 11;
+  margin-left: 5px;
+}
+header nav > ul > li ul li ~ li{
+  margin-top: 11px;
+}
+header nav > ul > li ul li a{
+  color: #fff;
+}
+header nav > ul > li ul li{
+  margin-bottom: 20px;
+}
+
+header nav > ul > li ul li a:hover{
+  color: #b40000;
+}
+.sub_bg{
+  position: absolute;
+  left: 0;
+  top: 130px;
+  width: 100%;
+  height: 250px;
+  background-color: #000;
+  z-index: 10;
+}
+.sns{
+  color: #b40000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 55px;
+}
+.sns1 ul li{
+  height: 25px;
+  text-align: left;
+}
+.sns1 ul li a{
+  width: 100px;
+  padding: 10px 0 0 5px;
+}
+
+footer{
+  width: 100%;
+  background-color: #363636;
+}
+.footer_wrap{
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+.footer_left{
+  width: 700px;
+  padding-top: 30px;
+  float: left;
+}
+.footer_left .guide a{
+  float: left;
+  color: #a5a5a5;
+  padding: 30px 0 30px 14px;
+  font-size: 14px;
+}
+.footer_left .guide li:nth-child(2){
+  font-weight: bold;
+}
+
+/* sub_bg */
+.menu_bg{
+  clear: both;
+  height: 330px;
+  background-image: url(../image/sub/sub_bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% -5px;
+}
+.menu_bg h2{
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 330px;
+}
+
+/* manu_bar */
+.menu_bar{
+  width: 100%;
+  height: 100px;
+  background-color: #e3e3e3;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.menu_bar ul li{
+  display: inline-block;
+  margin-left: 80px;
+}
+.menu_bar ul li:hover{
+  font-weight: bold;
+}
+.menu_bar ul li:nth-child(1) a{
+  font-weight: bold;
+}
+
+/* menu_list */
+.menu_list{
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+.menu_list ul li{
+  float: left;
+  width: 260px;
+  height: 300px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.menu_list ul li p{
+  font-weight: bold;
+  text-align: center;
+}
+.menu_list ul li span{
+  display: block;
+  text-align: center;
+}
+.menu_list ul li a{
+  margin-top: 50px;
+  width: auto;
+  height: 200px;
+  display: block;
+}
+.menu_list ul li a img{
+  height: 100%;
+}
+.menu_list ul li ~ li a img{
+  filter: grayscale(1);
+}
+.menu_list ul li:hover a img{
+  filter: grayscale(0);
+}
+.menu_list ul li:last-child a img{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 260px;
+}
+.menu_list p{
+  clear: both;
+  text-align: center;
+}
+
+.menu_main{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+.menu_main iframe{
+  width: 1200px;
+  height: 600px;
+  border: none;
+}
+
+
+/* footer */
+.footer_left .footer_text p{
+  clear: both;
+  color: #a5a5a5;
+  font-size: 14px;
+  padding-left: 14px;
+  padding-bottom: 50px;
+  line-height: 150%;
+}
+.footer_right{
+  width: 400px;
+  float: left;
+  margin-top: 50px;
+  position: relative;
+}
+.footer_right .select{
+  width: 160px;
+  height: 30px;
+}
+.footer_right select{
+  width: 160px;
+  height: 30px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  background-color: #535353;
+  color: #a5a5a5;
+  outline: none;
+}
+.footer_right .sns1{
+  width: 215px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.footer_right .sns1 #youtube:hover{
+  filter: brightness(150%);
+}
+.footer_right .sns1 #insta:hover{
+  filter: brightness(150%);
+}
+.footer_right .sns1 #facebook:hover{
+  filter: brightness(150%);
+}
+.footer_right .sns1 #blog:hover{
+  filter: brightness(150%);
+}
+.footer_right .sns2{
+  width: 185px;
+  position: absolute;
+  right: 0;
+  bottom: -280%;
+}
+.footer_right .sns2 img{
+  margin-left: 10px;
+  margin-right: 0;
+}

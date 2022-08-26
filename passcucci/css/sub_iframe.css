@@ -1,0 +1,80 @@
+.menu{
+  width: 1100px;
+  height: 600px;
+  margin: 0 auto;
+}
+.menu img{
+  width: 45%;
+  margin: 30px;
+}
+.menu .menu_txt{
+  display: inline-block;
+  margin-left: 50px;
+  text-align: center;
+}
+.menu .menu_txt1 h2{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+.menu .menu_txt1 p{
+  margin-bottom: 14px;
+  line-height: 120%;
+}
+.menu .menu_txt1 span{
+  font-weight: bold;
+  display: block;
+  margin: 50px;
+}
+.menu .menu_txt2{
+  position: relative;
+}
+.menu .menu_txt2:before{
+  content: "";
+  width: 500px;
+  height: 2px;
+  background-color: #e3e3e3;
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+.menu .menu_txt2 h3{
+  margin: 30px;
+  font-weight: bold;
+}
+.menu .menu_txt2 ul{
+  margin-top: 25px;
+}
+.menu .menu_txt2 ul li{
+  margin: 0 auto;
+  position: relative;
+}
+.menu .menu_txt2 ul li:after{
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: #e3e3e3;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translate(-50%);
+}
+.menu .menu_txt2 ul li ~ li{
+  margin-top: 16px;
+}
+.menu .menu_txt2 ul li p{
+  display: block;
+  display: inline-block;
+  width: 76px;
+  color: #833a3a;
+  font-weight: bold;
+  width: 130px;
+  font-size: 14px;
+}
+.menu .menu_txt2 ul li span{
+  display: inline-block;
+  color: #787878;
+  width: 130px;
+  font-size: 14px;
+}
