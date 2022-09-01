@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body{
+  overflow-x: hidden;
+}
 /* header */
 .header{
   position: fixed;
@@ -192,7 +195,6 @@ main{
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
-  border: 1px solid #f00;
 }
 .left_nav{
   width: 230px;
@@ -245,7 +247,6 @@ main{
   display: block;
   margin-top: 20px;
 }
-
 
 /* sec1 */
 .sec1 > img{
@@ -324,6 +325,8 @@ main{
 }
 .img_wrap img{
   border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .img_wrap img:nth-child(1){
   margin-left: 60px;
@@ -338,6 +341,10 @@ main{
 .img_wrap img:nth-child(4){
   margin-left: 130px;
   margin-top: -30px;
+}
+.img_wrap img:hover{
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 /* sec4 */
