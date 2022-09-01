@@ -21,9 +21,10 @@ $(document).ready(function(){
       }
       else{
         $(".header").removeClass('on');
-        $('.logo a img').attr('src','./image/logo.png'); 
+        $('.logo a img').attr('src','./image/logo.png');
       }
     })
+
 	$('.sec2 ul li:nth-child(2) button').mouseover(function(){
 		$('.sec2 ul li:nth-child(2) button img').attr('src', 'image/icon2_hover.png');
 	}).mouseout(function(){
