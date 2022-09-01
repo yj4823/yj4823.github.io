@@ -24,4 +24,21 @@ $(document).ready(function(){
         $('.logo a img').attr('src','./image/logo.png'); 
       }
     })
+	$('.sec2 ul li:nth-child(2) button').mouseover(function(){
+		$('.sec2 ul li:nth-child(2) button img').attr('src', 'image/icon2_hover.png');
+	}).mouseout(function(){
+		$('.sec2 ul li:nth-child(2) button img').attr('src', 'image/icon2.png');
+	});
+
+	$('.sec2 ul li:nth-child(3) button').mouseover(function(){
+		$('.sec2 ul li:nth-child(3) button img').attr('src', 'image/icon3_hover.png');
+	}).mouseout(function(){
+		$('.sec2 ul li:nth-child(3) button img').attr('src', 'image/icon3.png');
+	});
+
+	$('.sec2 ul li:nth-child(4) button').mouseover(function(){
+		$('.sec2 ul li:nth-child(4) button img').attr('src', 'image/icon4_hover.png');
+	}).mouseout(function(){
+		$('.sec2 ul li:nth-child(4) button img').attr('src', 'image/icon4.png');
+	});
   });
