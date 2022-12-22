@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+.content_wrap{
+    padding: 0 21rem;
+}
+.navi ul li:nth-child(4) a{
+    color: #AF0023;
+    font-weight: 500;
+}
+
+.content_title{
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+.content_title h4{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.transaction_table_wrap{
+    padding: 0 9rem;
+}
+
+.board_write{
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+.board_write a span{
+    font-size: 1.6rem;
+    color: #9D9D9D;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+.board_write a img{
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+}
+.transaction_table{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #EAEAEA;
+    margin-bottom: 8rem;
+}
+.transaction_table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.transaction_table tr td{
+    font-size: 1.6rem;
+    height: 7.6rem;
+    border-bottom: 1px solid #EAEAEA;
+}
+.transaction_table tr td:nth-child(1){
+    width: 10%;
+}
+.transaction_table tr td:nth-child(2){
+    width: 70%;
+    text-align: left;
+}
+.transaction_table tr td:nth-child(3){
+    width: 10%;
+}
+.transaction_table tr td:nth-child(4){
+    width: 10%;
+}
+.transaction_table tr:hover{
+    background: #fafafa;
+}
+
+.transaction_state span{
+    padding: 0.6rem 1.7rem;
+    background: #AF0023;
+    color: #fff;
+    border-radius: 3rem;
+}
+.transaction_state_ing span{
+    padding: 0.6rem 2.3rem;
+    border: 1px solid #AF0023;
+    color: #AF0023;
+    border-radius: 3rem;
+}
+
+.list_num > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_num > div > div{
+    display: flex;
+    margin: 0 2rem;
+}
+.list_num > div > div input{
+    display: none;
+}
+.list_num > div > div > div ~ div{
+    margin-left: 0.5rem;
+}
+.list_num > div > div label{
+    display: block;
+   width: 4rem;
+   height: 4rem;
+   border-radius: 1rem;
+   background: #fff;
+   font-size: 1.6rem;
+   line-height: 4rem;
+   text-align: center;
+}
+.list_num > div > div > div input:checked + label{
+    display: block;
+   background: #AF0023;
+   border-radius: 1rem;
+   color: #fff;
+}
+
+
+@media (max-width:1530px) {
+    .content_wrap{
+        padding: 0 16rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+    .content_title h4{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 15%;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 60%;
+    }
+}
+
+@media (max-width:960px) {
+    .content_wrap{
+        padding: 0 6.5rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+    .content_title h4{
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 18%;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 50%;
+    }
+    .transaction_table tr td:nth-child(3){
+        width: 16%;
+    }
+    .transaction_table tr td:nth-child(4){
+        width: 16%;
+    }
+}
+
+@media (max-width:740px) {
+    .content_wrap{
+        padding: 0 6.5rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+    .content_title h4{
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 20%;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 50%;
+    }
+}
+
+@media (max-width:610px) {
+    .content_wrap{
+        padding: 0 6.5rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+    .content_title h4{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 20%;
+        font-size: 1.2rem;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 50%;
+    }
+    .transaction_table tr td{
+        font-size: 1.4rem;
+        height: 7.6rem;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .transaction_table tr td:nth-child(3){
+        display: none;
+    }
+    .transaction_table tr td:nth-child(4){
+        color: #ccc;
+    }
+    .list_num > div > div label{
+        display: block;
+       width: 3rem;
+       height: 3rem;
+       border-radius: 1rem;
+       background: #fff;
+       font-size: 1.2rem;
+       line-height: 3rem;
+       text-align: center;
+    }
+}
+
+@media (max-width:505px) {
+    .content_wrap{
+        padding: 0 6.5rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+    .content_title h4{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 24%;
+        font-size: 1.2rem;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 40%;
+    }
+    .transaction_table tr td{
+        font-size: 1.4rem;
+        height: 7.6rem;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .transaction_table tr td:nth-child(3){
+        display: none;
+    }
+    .transaction_table tr td:nth-child(4){
+        color: #ccc;
+    }
+    .transaction_state span{
+        padding: 0.2rem 0.7rem;
+        background: #AF0023;
+        color: #fff;
+        border-radius: 3rem;
+        border: 1px solid #AF0023;
+    }
+    .transaction_state_ing span{
+        padding: 0.2rem 1.2rem;
+        border: 1px solid #AF0023;
+        color: #AF0023;
+        border-radius: 3rem;
+    }
+}
+
+@media (max-width:380px) {
+    .content_wrap{
+        padding: 0 1.6rem;
+    }
+    .content_title{
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+    .content_title h4{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .transaction_table_wrap{
+        padding: 0;
+    }
+    .transaction_table tr td:nth-child(1){
+        width: 24%;
+        font-size: 1.2rem;
+    }
+    .transaction_table tr td:nth-child(2){
+        width: 40%;
+    }
+    .transaction_table tr td{
+        font-size: 1.4rem;
+        height: 7.6rem;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .transaction_table tr td:nth-child(3){
+        display: none;
+    }
+    .transaction_table tr td:nth-child(4){
+        color: #ccc;
+    }
+    .transaction_state span{
+        padding: 0.2rem 0.7rem;
+        background: #AF0023;
+        color: #fff;
+        border-radius: 3rem;
+        border: 1px solid #AF0023;
+    }
+    .transaction_state_ing span{
+        padding: 0.2rem 1.2rem;
+        border: 1px solid #AF0023;
+        color: #AF0023;
+        border-radius: 3rem;
+    }
+}

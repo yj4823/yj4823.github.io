@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.content_wrap{
+    background-image: url(../img/greeting_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    border: 1px solid transparent;
+}
+.navi ul li:first-child a{
+    color: #AF0023;
+    font-weight: 500;
+}
+
+/* 타이틀 */
+.greeting_title{
+    text-align: center;
+}
+.greeting_title h2{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 25rem;
+}
+
+/* text_wrap */
+.greeting_text_wrap{
+    text-align: center;
+    margin-top: 80rem;
+}
+.greeting_text_wrap p{
+    font-size: 1.6rem;
+}
+.text_mirror{
+    color: #ccc;
+    transform: scaleY(-1);
+    margin-top: 1rem;
+    opacity: 0.3;
+}
+
+/* 대표이름 */
+.greeting_name{
+    height: 4.8rem;
+    margin-top: 6rem;
+    text-align: center;
+    background-image: url(../img/greeting_name_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.greeting_name h4{
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+}
+
+
+@media (max-width:1600px) {
+    .content_wrap{
+        background-position: center 0rem;
+    }
+    
+    /* 타이틀 */
+    .greeting_title h2{
+        margin-top: 20rem;
+    }
+    
+    /* text_wrap */
+    .greeting_text_wrap{
+        margin-top: 60rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .content_wrap{
+        background-image: url(../img/greeting_img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center -10rem;
+        border: 1px solid transparent;
+    }
+    
+    /* 타이틀 */
+    .greeting_title{
+        text-align: center;
+    }
+    .greeting_title h2{
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-top: 16rem;
+    }
+    
+    /* text_wrap */
+    .greeting_text_wrap{
+        text-align: center;
+        margin-top: 60rem;
+    }
+    .greeting_text_wrap p{
+        font-size: 1.6rem;
+    }
+    
+    /* 대표이름 */
+    .greeting_name{
+        height: 4.8rem;
+        margin-top: 6rem;
+        text-align: center;
+        background-image: url(../img/greeting_name_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    .greeting_name h4{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 4.8rem;
+    }
+}
+
+@media (max-width:390px) {
+    .content_wrap{
+        background-image: url(../img/greeting_img.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        border: 1px solid transparent;
+    }
+    
+    /* 타이틀 */
+    .greeting_title{
+        text-align: center;
+    }
+    .greeting_title h2{
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-top: 5.5rem;
+    }
+    
+    /* text_wrap */
+    .greeting_text_wrap{
+        text-align: center;
+        margin-top: 26rem;
+    }
+    .greeting_text_wrap p{
+        font-size: 1.2rem;
+        width: 28rem;
+        margin: 0 auto;
+    }
+    .text_mirror{
+        display: none;
+    }
+    
+    /* 대표이름 */
+    .greeting_name{
+        height: 2.6rem;
+        margin-top: 6rem;
+        margin-bottom: 7rem;
+        text-align: center;
+        background-image: url(../img/greeting_name_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .greeting_name h4{
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+    }
+}
