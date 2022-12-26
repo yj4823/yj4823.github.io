@@ -22,7 +22,7 @@
 }
 .content_left:before{
     content: '';
-    background-image: url(/img/inquiry_img.jpg);
+    background-image: url(../img/inquiry_img.jpg);
     width: 36rem;
     height: 36rem;
     position: absolute;
