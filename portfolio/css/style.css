@@ -64,17 +64,17 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 18px;
 }
 #menu li a.active{
-    color: #ffa315;
+    color: #0575e6;
 }
 #menu li a:hover{
-    color:#ffa315;
+    color:#0575e6;
 }
 #menu li a,#menu li.active a{
     padding: 5px 10px;
     display:block;color:#000;
 }
 #menu li.active a{
-    color: #ffa315;
+    color: #0575e6;
     font-weight:normal;
 }
 
@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6,p{
 .main .line span{
     display: block;
     position: absolute;
-    background: #ffa315;
+    background: #0575e6;
     z-index: 11;
 }
 .main .line span:nth-child(1){
@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,h6,p{
     animation: ani1 1s;
 }
 .main_text{
-    background: rgba(255, 163, 21, 0.1);
+    background: rgba(5, 117, 230, 0.06);
     border-radius: 50%;
     animation: ani3 1s;
 }
@@ -228,7 +228,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .prof1 h2{
     font-size: 40px;
-    font-family: "HUWindgoth110",sans-serif;
+    font-family: 'S-CoreDream-3Light','Swis721 BlkCn BT', sans-serif !important;
     padding-bottom: 10px;
 }
 .prof1 h3{
@@ -237,7 +237,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .prof1 ul{
     width: 350px;
-    padding-left: 30px;
+    padding-left: 0;
 }
 .prof1 ul li{
     font-size: 16px;
@@ -268,7 +268,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .list1{
     width: 100%;
-    height: 180px;
+    height: 150px;
     float: left;
     line-height: 25px;
     border-bottom:1px #ddd solid;
@@ -292,15 +292,15 @@ h1,h2,h3,h4,h5,h6,p{
 /* skill 영역 */
 .list23{
     clear: both;
-    width: 1300px;
+    width: 100%;
     box-sizing: border-box; 
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 .list2{
     float: left;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 410px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -310,18 +310,21 @@ h1,h2,h3,h4,h5,h6,p{
     padding-bottom: 30px;
 }
 .skill{
-    width: 600px;
-    height: 300px;
+    width: 90%;
+    height: 360px;
     padding: 20px 15px;
     box-sizing: border-box;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 .skill > div{
     clear: both;
-    width: 100%;
+    width: 42%;
     overflow: hidden;
-    padding-bottom: 30px;
-    padding-left: 40px;
+    padding: 0;
 }
 .skill p{
     width: 110px;
@@ -331,35 +334,35 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .skill .bar{
     float: left;
-    width: 200px;
+    width: 260px;
     height: 30px;
 }
 .skill .fullbar{
     width: 100%;
-    height: 25px;
-    background: #D1D1D1;
+    height: 30px;
+    background: #e8e8e8;
     position: relative;
     overflow: hidden;
 }
 .skill .occupy{
-    background: #ffa315;
+    background: #0575e6;
     height: 100%;
     color: #fff;
     position: absolute;
     top: 0;
-    left: -200px;
+    left: -300px;
 }
 .skill .occupy > span{
     float: right;
     margin-right: 10px;
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 30px;
+    font-size: 16px;
 }
-#ai .occupy{width: 95%;}
-#ht .occupy{width: 90%;}
-#ja .occupy{width: 70%;}
-#jq .occupy{width: 80%;}
-#fm .occupy{width: 95%;}
+#ai .occupy{width: 90%;}
+#ht .occupy{width: 95%;}
+#ja .occupy{width: 75%;}
+#jq .occupy{width: 85%;}
+#fm .occupy{width: 100%;}
 #c .occupy{width: 70%;}
 
 /* 취미영역 */
@@ -482,11 +485,11 @@ h1,h2,h3,h4,h5,h6,p{
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: #ffa315;
+    background: #0575e6;
     transition: 0.6s;
 }
 .filter:hover:after{
-    color: #ffa315;
+    color: #0575e6;
     width: 60%;
 }
 button{
@@ -500,7 +503,7 @@ button{
     cursor: pointer;
 }
 button:active{
-    color:#f2733d;
+    color:#0575e6;
 }
 button:focus{
     outline: none;
@@ -529,7 +532,6 @@ button:focus{
     width: 22%;
     height: 230px;
     margin:20px;
-    border: 1px solid #ccc;
 }
 .container > div > img{
     width: 100%;
